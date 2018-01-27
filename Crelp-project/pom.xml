@@ -38,5 +38,6 @@
   <modules>
   	<module>Crelp-project-web</module>
     <module>Crelp-utills</module>
+    <module>Crelp-web</module>
   </modules>
 </project>
