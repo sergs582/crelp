@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,h6{
     background-color:#000!important
 }
 
+
+	
+	
+
 .rounded-pill{
     border-radius:5rem
 }
@@ -75,6 +79,11 @@ header.masthead .bg-circle{
     header.masthead .masthead-content .masthead-subheading{
         font-size:4rem
     }
+    
+    .centresq{
+    margin-top: 220px;
+    
+    }
 }
 .bg-primary{
     background-color:#ee0979!important
@@ -115,12 +124,69 @@ header.masthead .bg-circle{
 
 
 .BackgroundSign{
-	height: 500px;
+	height:100%;
 	width: 100%;
 	 background-image: url(../img/partners.jpg);
      background-repeat:no-repeat;
     background-position:center center;
+   background-size:auto;
    
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+.centresq{
+background-color: rgba(1,0,0,.7);
+    height: 350px;
+    width: 350px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    margin-top: 220px;
+    border-radius: 20px;
+    position: relative;
+	}
+	
+	
+	.logtext{
+	margin-left:30px;
+	
+	
+	}
+
+
+
+.BodySign{
+	
+ background-image: url(../img/fisher.jpg);
+     background-repeat:no-repeat;
+    background-position:center center;
+   background-size:auto 100%;
+	
+}
+	
+	
+	@media screen and (min-width:1605px){
+	
+	.BodySign{
+	
+	background-size: 100% 100%;
+	}
+
+	}
 	

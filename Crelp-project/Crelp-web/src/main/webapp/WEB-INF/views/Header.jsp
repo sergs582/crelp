@@ -29,8 +29,7 @@
 
   </head>
 
-  <body>
-
+ 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
@@ -41,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="signIn">Sign Up</a>
+              <a class="nav-link" href="signUp">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="loggingFrame">Log In</a>
@@ -53,9 +52,12 @@
                <li class="nav-item">
               <a class="nav-link" href="#">All Ideas</a>
             </li>
+             
               <li class="nav-item">
-              <a class="nav-link" href="#">Our Achvements</a>
+              <a  class="nav-link" href="#">Our Achvements</a>
             </li>
+           
+           
                <li class="nav-item">
               <a class="nav-link" href="#">Contacts</a>
             </li>
