@@ -129,20 +129,9 @@ header.masthead .bg-circle{
 	 background-image: url(../img/partners.jpg);
      background-repeat:no-repeat;
     background-position:center center;
-   background-size:auto;
+   background-size:100% 100%;
    
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -189,4 +178,98 @@ background-color: rgba(1,0,0,.7);
 	}
 
 	}
+	
+	
+	
+	
+	.Contacts{
+	
+	height: 800px;
+	
+	 background-image: url(../img/Contacts.jpg);
+     background-repeat:no-repeat;
+    background-position:center center;
+   background-size:100% 100%;
+	
+	
+	}
+
+	
+	
+	
+	
+	.userForm{
+	margin-right: 6%;
+	margin-left: 6%;
+	background-color: white;
+	height: 900px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	margin-bottom: 4%;
+	margin-top:90px;
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	.Avatar{
+	margin-top: 180px; 
+	margin-left:2%;
+	position: absolute;
+	
+	}
+	
+	
+	
+	.ava{
+	height:220px;
+	width:180px;
+	border: 5px solid white;
+	border-radius:10px;
+	
+	
+	
+	
+	}
+	
+	.userinfo{
+	color: #505359;
+	
+	}
+	
+	
+	.settings {
+	width: 40px;
+	height: 40px;
+	margin-top: 0.8%;
+	margin-right: 0.8%;
+	float: right;
+	}
+	
+	.featuredIdea{
+	background-color: #ffffff;
+	
+	
+	width: 400px;
+	height: 200px;
+	
+	margin-left:50%;
+	margin: 15px;
+	margin-top: 50px;
+	
+	margin-right:10%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 7px;
+	float:right;
+	
+	position:relative;
+	
+	}
+	
+	
+	
+	
 	

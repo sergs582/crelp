@@ -7,6 +7,8 @@ public interface UserService {
 	Iterable<User> getAllUsers();
 
 	User getUserById(Integer id);
+	
+	User getUserByLogin(String login);
 
 	void saveUser(User user);
 

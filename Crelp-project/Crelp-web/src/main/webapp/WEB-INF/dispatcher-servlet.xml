@@ -16,6 +16,11 @@
 	<mvc:annotation-driven />
 
 <import resource="dao-config.xml"/>
+<import resource="security-config.xml" />
+<import resource="service-config.xml"/>
+
+
+ <mvc:resources mapping="/resources/**" location="/resources/" />
 
 <import resource="spring-data-config.xml"/>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

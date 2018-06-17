@@ -2,11 +2,20 @@
 <title>Insert title here</title>
 </head>
 <body class="BodySign">
+
+ <c:set var = "status"  value = "${status}"/>
+<c:if test="${status==1}">
+
+<div style="height: auto; width:100%; background-color: red; margin-top: 72px;">
+<h1 style="text-align:center; color:white; font-size: 21px;">${FailMessage}</h1>
+</div>
+
+</c:if>
 <div style="margin-top: 80px; margin-left:20%; margin-right:20%; color: white;">
  
- 
+
  <h1>Registration</h1>
- <form method="get" action="myCabinet">
+ <form method="get" action="Registration">
 <br><br>
 Login:<input class="logtext form-control" style=" width: 300px;"type="text" name="login" placeholder="Login"/>
 <br>
@@ -21,20 +30,25 @@ E-Mail:<input class="logtext form-control" style=" width: 300px;" type="email" n
 
 Country:<input class="logtext form-control" style=" width: 300px;" type="text" name="country" placeholder="Country"/>
 <br>
-Role:<input type="radio" name="role" value="1"/> I have money!
-     <input type="radio" name="role" value="2"/> I have an idea!
+Role:&nbsp;<input type="radio" name="role" value="2"/> I have money!&nbsp;
+     <input type="radio" name="role" value="1"/> I have an idea!&nbsp;
 <br>
-Sex:
-<input type="radio" name="sex" value="man"/>Man
+<br>
 
-<input type="radio" name="sex" value="woman"/>Woman
+Sex:&nbsp;
+<input type="radio" name="sex" value="man" />&nbsp;Man&nbsp;
 
+<input type="radio" name="sex" value="woman"/>&nbsp;Woman
+<br>
 <br>
 Birthday:
 <input class="logtext form-control" style=" width: 300px;" type="date" name="birth"/>
 <br>
 Phone Number
 <input class="logtext form-control" style=" width: 300px;" type="tel" name="phone" placeholder="Phone Number">
+<br>
+
+ <textarea name = "other"   rows="8" cols="60" placeholder="Other information or name of your comoany" ></textarea> 
 <br>
 
 <input type="submit" class="btn btn-default" value="SignIn(Info)">

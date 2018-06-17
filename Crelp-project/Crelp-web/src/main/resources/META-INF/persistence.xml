@@ -10,6 +10,8 @@
         <!-- Define mapping entities -->
         <class>com.idealabs.crelpweb.entities.User</class>
        <class>com.idealabs.crelpweb.entities.Idea</class>
+              <class>com.idealabs.crelpweb.entities.Role</class>
+       
  
         <properties>
             <!-- Hibernate properties -->

@@ -58,9 +58,23 @@ public class User implements Serializable{
 	
 	@Column(name = "avatar")
 	private String avapath;
+	
+	@Column(name = "sex")
+	private String sex;
+	
+	
+	@Column(name = "regadate")
+	private String regadate;
+	
+	@Column(name = "other")
+	private String other;
+
+	public User() {
+		super();
+	}
 
 	public User(int id, String login, String password, String name, String surname, String phone, String email,
-			String country, String birth, int role, int status, String avapath) {
+			String country, String birth, int role, int status, String avapath, String sex) {
 		super();
 		this.id = id;
 		this.login = login;
@@ -74,14 +88,11 @@ public class User implements Serializable{
 		this.role = role;
 		this.status = status;
 		this.avapath = avapath;
-	}
-
-	public User() {
-		super();
+		this.sex = sex;
 	}
 
 	public User(String login, String password, String name, String surname, String phone, String email, String country,
-			String birth, int role) {
+			String birth, int role, String sex) {
 		super();
 		this.login = login;
 		this.password = password;
@@ -92,6 +103,84 @@ public class User implements Serializable{
 		this.country = country;
 		this.birth = birth;
 		this.role = role;
+		this.sex = sex;
+	}
+
+	public User(int id, String login, String password, String name, String surname, String phone, String email,
+			String country, String birth, int role, int status, String avapath, String sex, String regadate) {
+	
+		this.id = id;
+		this.login = login;
+		this.password = password;
+		this.name = name;
+		this.surname = surname;
+		this.phone = phone;
+		this.email = email;
+		this.country = country;
+		this.birth = birth;
+		this.role = role;
+		this.status = status;
+		this.avapath = avapath;
+		this.sex = sex;
+		this.regadate = regadate;
+	}
+	
+	
+	
+
+
+	public User(String login, String password, String name, String surname, String phone, String email, String country,
+			String birth, int role, String sex, String regadate) {
+		super();
+		this.login = login;
+		this.password = password;
+		this.name = name;
+		this.surname = surname;
+		this.phone = phone;
+		this.email = email;
+		this.country = country;
+		this.birth = birth;
+		this.role = role;
+		this.sex = sex;
+		this.regadate = regadate;
+	}
+
+	public User(String login, String password, String name, String surname, String phone, String email, String country,
+			String birth, int role, String sex, String regadate, String other) {
+		super();
+		this.login = login;
+		this.password = password;
+		this.name = name;
+		this.surname = surname;
+		this.phone = phone;
+		this.email = email;
+		this.country = country;
+		this.birth = birth;
+		this.role = role;
+		this.sex = sex;
+		this.regadate = regadate;
+		this.other = other;
+	}
+
+	public User(int id, String login, String password, String name, String surname, String phone, String email,
+			String country, String birth, int role, int status, String avapath, String sex, String regadate,
+			String other) {
+		super();
+		this.id = id;
+		this.login = login;
+		this.password = password;
+		this.name = name;
+		this.surname = surname;
+		this.phone = phone;
+		this.email = email;
+		this.country = country;
+		this.birth = birth;
+		this.role = role;
+		this.status = status;
+		this.avapath = avapath;
+		this.sex = sex;
+		this.regadate = regadate;
+		this.other = other;
 	}
 
 	public int getId() {
@@ -190,6 +279,30 @@ public class User implements Serializable{
 		this.avapath = avapath;
 	}
 
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getRegadate() {
+		return regadate;
+	}
+
+	public void setRegadate(String regadate) {
+		this.regadate = regadate;
+	}
+
+	public String getOther() {
+		return other;
+	}
+
+	public void setOther(String other) {
+		this.other = other;
+	}
+
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
@@ -205,9 +318,12 @@ public class User implements Serializable{
 		result = prime * result + id;
 		result = prime * result + ((login == null) ? 0 : login.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((other == null) ? 0 : other.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((phone == null) ? 0 : phone.hashCode());
+		result = prime * result + ((regadate == null) ? 0 : regadate.hashCode());
 		result = prime * result + role;
+		result = prime * result + ((sex == null) ? 0 : sex.hashCode());
 		result = prime * result + status;
 		result = prime * result + ((surname == null) ? 0 : surname.hashCode());
 		return result;
@@ -254,6 +370,11 @@ public class User implements Serializable{
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
+		if (this.other == null) {
+			if (other.other != null)
+				return false;
+		} else if (!this.other.equals(other.other))
+			return false;
 		if (password == null) {
 			if (other.password != null)
 				return false;
@@ -264,7 +385,17 @@ public class User implements Serializable{
 				return false;
 		} else if (!phone.equals(other.phone))
 			return false;
+		if (regadate == null) {
+			if (other.regadate != null)
+				return false;
+		} else if (!regadate.equals(other.regadate))
+			return false;
 		if (role != other.role)
+			return false;
+		if (sex == null) {
+			if (other.sex != null)
+				return false;
+		} else if (!sex.equals(other.sex))
 			return false;
 		if (status != other.status)
 			return false;
@@ -280,11 +411,14 @@ public class User implements Serializable{
 	public String toString() {
 		return "User [id=" + id + ", login=" + login + ", password=" + password + ", name=" + name + ", surname="
 				+ surname + ", phone=" + phone + ", email=" + email + ", country=" + country + ", birth=" + birth
-				+ ", role=" + role + ", status=" + status + ", avapath=" + avapath + "]";
+				+ ", role=" + role + ", status=" + status + ", avapath=" + avapath + ", sex=" + sex + ", regadate="
+				+ regadate + ", other=" + other + "]";
 	}
-
 	
 	
 	
 
+
+	
+	
 }
